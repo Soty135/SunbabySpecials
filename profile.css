@@ -1,0 +1,141 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for header */
+  color: #fff;
+  padding: 10px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-header .logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.sticky-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.sticky-header nav ul li {
+  margin: 0;
+}
+
+.sticky-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sticky-header nav ul li a:hover {
+  color: #80deea; /* Lighter cyan hover */
+}
+
+.hero-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Main content styles */
+main {
+  padding: 40px 20px;
+  max-width: 400px; /* Adjusted for a more compact layout */
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.5em;
+  color: #00acc1; /* Cyan */
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: #00acc1; /* Cyan */
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #00acc1; /* Cyan */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007c91; /* Darker cyan */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333; /* Dark background for footer */
+  color: #fff;
+}
+
+/* Active link styles */
+.nav-link.active {
+  color: #80deea; /* Lighter cyan */
+  font-weight: bold;
+  border-bottom: 2px solid #80deea; /* Underline the active link */
+}

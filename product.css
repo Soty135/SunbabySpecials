@@ -1,0 +1,232 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* product.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Header styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for header */
+  color: #fff;
+  padding: 10px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-header .logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.sticky-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.sticky-header nav ul li {
+  margin: 0;
+}
+
+.sticky-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sticky-header nav ul li a:hover {
+  color: #80deea; /* Lighter cyan hover */
+}
+
+.hero-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e0f7fa; /* Light cyan hover color */
+}
+
+.hero-image {
+  height: 50px;
+}
+
+.main1 {
+  padding: 20px;
+}
+
+.products {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bcd4; /* Cyan color */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 0 10px;
+  color: #666;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin: 10px;
+  color: #00bcd4; /* Cyan color */
+  text-align: center;
+}
+
+.product-card .add-to-cart {
+  background-color: #00bcd4; /* Cyan color */
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #008c9e; /* Darker cyan for hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Dark background for footer */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.go-to-cart {
+  position: fixed; /* Fixed positioning */
+  top: 80px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.cart-button {
+  display: inline-flex; /* Center the icon */
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Set width */
+  height: 50px; /* Set height */
+  background-color: #00acc1; /* Cyan */
+  color: #fff; /* White color for the icon */
+  border-radius: 50%; /* Circular shape */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: background-color 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #007c91; /* Darker cyan on hover */
+}
+
+.cart-button i {
+  font-size: 24px; /* Icon size */
+}
+
+
+
+@media (max-width: 600px) {
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 13px;
+  }
+
+  .product-card .add-to-cart {
+    font-size: 12px;
+  }
+}
+
+/* Active link styles */
+.nav-link.active {
+  color: #80deea; /* Lighter cyan */
+  font-weight: bold;
+  border-bottom: 2px solid #80deea; /* Underline the active link */
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="sticky-header">
+    <img class="hero-image" src="images/food-ordering-logo.jpg" alt="Hero Image">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Menu</a></li>
+        <li><a href="about-contact.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link">User Profile</a></li>
+        <li><a href="cart.html" class="nav-link">Cart</a></li>
+        <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+        <li><a href="promotions.html" class="nav-link">Promotions</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="go-to-products">
+    <a href="product.html" class="products-button">
+      <i class="fas fa-utensils"></i> <!-- Using a utensils icon for products -->
+    </a>
+  </div> 
+  <main class="cart">
+    <h2>Your Cart</h2>
+    <div class="items"></div>
+    <div class="total">
+      <h3>Total: <span class="total-price">0.00</span></h3>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2024 Our Food Ordering Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>

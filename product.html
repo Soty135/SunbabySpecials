@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Dishes</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="sticky-header">
+    <img class="hero-image" src="images/food-ordering-logo.jpg" alt="Hero Image">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Menu</a></li>
+        <li><a href="about-contact.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link">User Profile</a></li>
+        <li><a href="cart.html" class="nav-link">Cart</a></li>
+        <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+        <li><a href="promotions.html" class="nav-link">Promotions</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="go-to-cart">
+    <a href="cart.html" class="cart-button">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </div>   
+  <main class="main1"> 
+    <section class="products">
+      <h2>Our Dishes</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/jollof-rice.jpg" alt="Jollof Rice">
+          <h3>Jollof Rice</h3>
+          <p>A flavorful rice dish with tomatoes, peppers, and spices.</p>
+          <div class="price">Price: $29.99</div>
+          <button class="add-to-cart" data-id="1" data-name="Jollof Rice" data-price="29.99">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="images/egusi-soup.jpg" alt="Egusi Soup">
+          <h3>Egusi Soup</h3>
+          <p>A popular Nigerian soup made with melon seeds and vegetables.</p>
+          <div class="price">Price: $34.99</div>
+          <button class="add-to-cart" data-id="2" data-name="Egusi Soup" data-price="34.99">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="images/fufu.jpg" alt="Fufu">
+          <h3>Fufu</h3>
+          <p>A staple food made from boiled and mashed root vegetables.</p>
+          <div class="price">Price: $27.99</div>
+          <button class="add-to-cart" data-id="3" data-name="Fufu" data-price="27.99">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="images/ofela.jpeg" alt="Ofela">
+          <h3>Ofela</h3>
+          <p>A delicious Nigerian stew made with palm oil and vegetables.</p>
+          <div class="price">Price: $32.50</div>
+          <button class="add-to-cart" data-id="4" data-name="Ofela" data-price="32.50">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="images/suya.jpeg" alt="Suya">
+          <h3>Suya</h3>
+          <p>Grilled skewered beef or chicken with a spicy peanut butter seasoning.</p>
+          <div class="price">Price: $15.99</div>
+          <button class="add-to-cart" data-id="5" data-name="Suya" data-price="15.99">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="images/akara1.jpeg" alt="Akara">
+          <h3>Akara</h3>
+          <p>Fried bean cakes made from black-eyed peas.</p>
+          <div class="price">Price: $10.99</div>
+          <button class="add-to-cart" data-id="6" data-name="Akara" data-price="10.99">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Our Food Ordering Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>

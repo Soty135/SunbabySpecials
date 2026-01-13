@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Contact Us</title>
+  <link rel="stylesheet" href="about-contact.css"> <!-- Link to your CSS file -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="sticky-header">
+    <img class="hero-image" src="images/food-ordering-logo.jpg" alt="Hero Image">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Menu</a></li>
+        <li><a href="about-contact.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link">User Profile</a></li>
+        <li><a href="cart.html" class="nav-link">Cart</a></li>
+        <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+        <li><a href="promotions.html" class="nav-link">Promotions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-contact">
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to our food ordering website! We are dedicated to providing you with the best culinary experience. Our team of chefs uses the freshest ingredients to create delicious meals that you'll love. Whether you're craving traditional dishes or something new, we have something for everyone.</p>
+    </section>
+
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Our Food Ordering Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>

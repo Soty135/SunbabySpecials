@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Ordering Site</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="sticky-header">
+    <img class="hero-image" src="images/food-ordering-logo.jpg" alt="Hero Image">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="product.html" class="nav-link">Menu</a></li>
+        <li><a href="about-contact.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link">User Profile</a></li>
+        <li><a href="cart.html" class="nav-link">Cart</a></li>
+        <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+        <li><a href="promotions.html" class="nav-link">Promotions</a></li>
+      </ul>
+    </nav>    
+  </header>
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="images/food-ordering-logo.jpg" alt="Hero Image">
+      <div class="hero-text">
+        <h2>Welcome to Bele For The Boys</h2>
+        <p>Discover a world of convenience and delicious food.</p>
+        <a href="product.html" class="button">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Our Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <img src="images/easy-ordering.jpg" alt="Feature 1">
+          <h3>Easy Ordering</h3>
+          <p>Place your orders with just a few clicks.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/fast-delivery.jpg" alt="Feature 2">
+          <h3>Fast Delivery</h3>
+          <p>Enjoy quick and reliable delivery.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/secure-payment.jpg" alt="Feature 3">
+          <h3>Secure Payments</h3>
+          <p>Pay securely using our trusted payment methods.</p>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      
+      <!-- Existing Review -->
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>Great service and delicious food! Highly recommend.</p>
+        <div class="review-actions">
+          <button class="like-btn">👍 Like <span class="like-count">0</span></button>
+          <button class="dislike-btn">👎 Dislike <span class="dislike-count">0</span></button>
+        </div>
+      </div>
+      
+      <!-- More Reviews can be added dynamically here -->
+      
+      <!-- Review submission form -->
+      <form class="review-form">
+        <h3>Submit Your Review</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="review" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Ordering Site</p>
+  </footer>
+</body>
+</html>
